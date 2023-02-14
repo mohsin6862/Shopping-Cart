@@ -30,30 +30,30 @@
             <div class="bg-slate-100 p-5 rounded-lg">
                 <h1 class="text-center text-slate-900 text-2xl font-bold mb-2">Black Forest</h1>
                 <img class="w-56 h-36" src="images/th (9).jpg" alt="">
-                <h2 class="text-black font-semibold text-center text-2xl mt-3">Price $<span>100</span></h2>
-                <input class="block rounded mt-2 px-2" type="text" placeholder="Add Quantity">
-                <button  class="bg-orange-500 hover:bg-orange-800 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
+                <h2 class="text-black font-semibold text-center text-2xl mt-3">Price $<span id="black-forest-price">100</span></h2>
+                <input id="black-forest-qty" class="block rounded mt-2 px-2" type="text" placeholder="Add Quantity">
+                <button  id="black-forest-btn" class="bg-orange-500 hover:bg-orange-800 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
             </div>
             <div class="bg-slate-100 p-5 rounded-lg">
                 <h1 class="text-center text-slate-900 text-2xl font-bold mb-2">Cookies</h1>
                 <img class="w-56 h-36" src="images/th (10).jpg" alt="">
-                <h2 class="text-black font-semibold text-center text-2xl mt-3">Price $<span>60</span></h2>
-                <input class="block rounded mt-2 px-2" type="text" placeholder="Add Quantity">
-                <button  class="bg-orange-500 hover:bg-orange-800 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
+                <h2 class="text-black font-semibold text-center text-2xl mt-3">Price $<span id="cookies-price">60</span></h2>
+                <input id="cookies-qty" class="block rounded mt-2 px-2" type="text" placeholder="Add Quantity">
+                <button id="cookies-btn" class="bg-orange-500 hover:bg-orange-800 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
             </div>
             <div class="bg-slate-100 p-5 rounded-lg">
                 <h1 class="text-center text-slate-900 text-2xl font-bold mb-2">Vanilla Cake</h1>
                 <img class="w-56 h-36" src="images/th (11).jpg" alt="">
-                <h2 class="text-black font-semibold text-center text-2xl mt-3">Price $<span>40</span></h2>
-                <input class="block rounded mt-2 px-2" type="text" placeholder="Add Quantity">
-                <button  class="bg-orange-500 hover:bg-orange-800 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
+                <h2 class="text-black font-semibold text-center text-2xl mt-3">Price $<span id="vanilla-cake-price">40</span></h2>
+                <input id="vanilla-cake-qty" class="block rounded mt-2 px-2" type="text" placeholder="Add Quantity">
+                <button id="vanilla-cake-btn"  class="bg-orange-500 hover:bg-orange-800 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
             </div>
             <div class="bg-slate-100 p-5 rounded-lg">
                 <h1 class="text-center text-slate-900 text-2xl font-bold mb-2">Dounut</h1>
                 <img class="w-56 h-36" src="images/th (12).jpg" alt="">
-                <h2 class="text-black font-semibold text-center text-2xl mt-3">Price $<span>60</span></h2>
-                <input class="block rounded mt-2 px-2" type="text" placeholder="Add Quantity">
-                <button  class="bg-orange-500 hover:bg-orange-800 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
+                <h2 class="text-black font-semibold text-center text-2xl mt-3">Price $<span id="donut-price">60</span></h2>
+                <input id="donut-qty" class="block rounded mt-2 px-2" type="text" placeholder="Add Quantity">
+                <button id="donut-btn" class="bg-orange-500 hover:bg-orange-800 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
             </div>
             <div class="bg-slate-100 p-5 rounded-lg">
                 <img class="w-56 h-36" src="images/th (13).jpg" alt="">
@@ -140,6 +140,49 @@
                 <button  class="bg-orange-500 px-3 py-1 justify-center items-center text-slate-900 font-bold rounded-lg ml-12 mt-3 text-center">Buy Now</button>
             </div> -->
         </div>   
+    </section>
+
+    <section class="mt-8  w-3/4 mx-auto">
+        <h1 class="text-5xl text-slate-900 font-bold ml-10">Cart</h1>
+
+        <div class="bg-slate-100 grid grid-cols-3 w-full mx-auto rounded-xl mt-10 p-8">
+
+            <div>
+                <h1 class=" text-slate-900 text-2xl font-bold mb-2">Product Name</h1>
+                <h1 class=" text-slate-900 text-2xl font-bold mb-2">Black Forest</h1>
+                <h1 class=" text-slate-900 text-2xl font-bold mb-2">Cookies</h1>
+                <h1 class=" text-slate-900 text-2xl font-bold mb-2">Vanilla Cake</h1>
+                <h1 class=" text-slate-900 text-2xl font-bold mb-2">Donut</h1>
+                <br>
+                <hr>
+                <h1 class=" text-slate-900 text-2xl font-bold mb-2">Total</h1>
+            </div>
+            <div>
+                
+                <h1 class="text-black font-semibold text-center text-2xl mb-2"><span>Qty</span></h1>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2"><span id="total-black-forest-qty">0</span></h1>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2"><span id="total-cookies-qty">0</span></h1>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2"><span id="total-vanilla-cake-qty">0</span></h1>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2"><span id="total-donut-qty">0</span></h1>
+                <br>
+                <hr>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2">$<span>0</span></h1>
+
+            </div>
+            <div>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2">$<span>Price</span></h1>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2">$<span id="total-black-forest-price">00</span></h1>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2">$<span id="total-cookies-price">00</span></h1>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2">$<span id="total-vanilla-cake-price">00</span></h1>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2">$<span id="total-donut-price">00</span></h1>
+                <br>
+                <hr>
+                <h1 class="text-black font-semibold text-center text-2xl mb-2">$<span>00</span></h1>
+
+            </div>
+
+
+        </div>
     </section>
   </main>
 
